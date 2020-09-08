@@ -1,6 +1,6 @@
 import React from 'react'
 import './StoryReel.css'
-import Story from '../../Story/Story'
+import Story from '../Story/Story'
 
 const StoryReel = () => {
     return (
