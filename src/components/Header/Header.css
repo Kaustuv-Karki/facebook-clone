@@ -1,6 +1,7 @@
 .header{
     border-bottom: 1px solid lightgray;
     display: flex;
+    background-color: white;
     align-items: center;
     justify-content: space-between;
     z-index: 100;

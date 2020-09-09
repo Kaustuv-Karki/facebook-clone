@@ -11,10 +11,13 @@ import StorefrontIcon from '@material-ui/icons/Storefront';
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
+import {useStateValue} from '../../StateProvider'
+
 const Sidebar = () => {
+    const [{user}, dispatch] = useStateValue()
     return (
         <div className="sidebar">
-            <SidebarRow title="Kaustuv Karki"/>
+            <SidebarRow src={user?.photoURL} title={user?.displayName}/>
             <SidebarRow title="COVID-19 Information Center" Icon={LocalHospitalIcon}/>
             <SidebarRow title="Pages" Icon={EmojiFlagsIcon}/>
             <SidebarRow title="Friends" Icon={PeopleIcon}/>
